@@ -1,0 +1,48 @@
+.registro {
+    background-color: #d0d0ce;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorFormularioRegistro {
+    width: 90%;
+}
+
+.registroCard {
+    padding: 20px;
+    border: 0;
+    border-radius: 27.5px;
+    box-shadow: 0 10px 30px 0 rgba(172, 168, 168, 0.43);
+    overflow: hidden;
+    background-color: white;
+}
+
+.registroCard__header img {
+    height: 35px;
+}
+
+.registroCard__body input {
+    width: 93%;
+    border: 1px solid #d5dae2;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    min-height: 45px;
+    font-size: 13px;
+    font-weight: normal;
+    border-radius: 10px;
+}
+
+.contenedorBoton button {
+    width: 99%;
+    padding: 13px 20px 12px;
+    background-color: #000;
+    border: 0;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 10px;
+}
