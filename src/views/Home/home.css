@@ -1,0 +1,147 @@
+.contenedorHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Componente Perfil */
+
+.contenedorPerfil {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    margin-top: 40px;
+    width: 90%;
+    border-radius: 25px;
+}
+
+.contenedorPerfil__foto {
+    margin: 20px;
+    text-align: center;
+}
+
+.contenedorPerfil__datos {
+    margin: 20px;
+    padding-left: 40px;
+}
+
+
+/* Componente Tarjeta */
+
+.contenedorTarjeta {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    margin-top: 40px;
+    width: 90%;
+    background-color: rgb(150, 150, 150);
+    border-radius: 10px;
+}
+
+.contenedorTarjeta .contenido {
+    padding: 20px;
+}
+
+.contenido__disponible {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido__disponible span {
+    margin-top: 8px;
+}
+
+.contenido__numeroTarjeta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido__numeroTarjeta .digitos img {
+    margin-right: 4px;
+}
+
+.contenido__datos {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Componente Menu */
+
+.contenedorMenu {
+    display: flex;
+    width: 90%;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.contenedorMenu__uno {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contenedorMenu__uno .contenedorMenu__deposito {
+    width: 48%;
+    border-radius: 25px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.contenedorMenu__uno .contenedorMenu__deposito .contenido {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.contenedorMenu__uno .contenedorMenu__deposito .contenido .icono img {
+    width: 32px;
+}
+
+.contenedorMenu__uno .contenedorMenu__retiro {
+    width: 48%;
+    border-radius: 25px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.contenedorMenu__uno .contenedorMenu__retiro .contenido {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.contenedorMenu__uno .contenedorMenu__retiro .contenido .icono img {
+    width: 32px;
+}
+
+.contenedorMenu__dos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedorMenu__dos .contenedorMenu__transferencia {
+    width: 48%;
+    border-radius: 25px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.contenedorMenu__dos .contenedorMenu__transferencia .contenido {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.contenedorMenu__dos .contenedorMenu__transferencia .contenido .icono img {
+    width: 32px;
+}
+
+.contenedorMenu__dos .contenedorMenu__movimientos {
+    width: 48%;
+    border-radius: 25px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.contenedorMenu__dos .contenedorMenu__movimientos .contenido {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.contenedorMenu__dos .contenedorMenu__movimientos .contenido .icono img {
+    width: 32px;
+}
