@@ -145,3 +145,14 @@
 .contenedorMenu__dos .contenedorMenu__movimientos .contenido .icono img {
     width: 32px;
 }
+
+
+/* Componente Panel */
+
+.contenedorPanel {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    margin-top: 40px;
+    width: 90%;
+    height: 500px; /* por el momento */
+    border-radius: 25px;
+}
