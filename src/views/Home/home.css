@@ -1,15 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+
 .contenedorHome {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    /*flex-direction: column;
+    align-items: center;*/
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
 }
 
 /* Componente Perfil */
 
 .contenedorPerfil {
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    /*box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     margin-top: 40px;
     width: 90%;
+    border-radius: 25px;*/
+    width: 90%;
+}
+
+.contenedorPerfil .contenido {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    /*margin-top: 40px;*/
+    /*width: 90%;*/
     border-radius: 25px;
 }
 
@@ -27,15 +41,23 @@
 /* Componente Tarjeta */
 
 .contenedorTarjeta {
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    /*box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     margin-top: 40px;
     width: 90%;
-    background-color: rgb(150, 150, 150);
-    border-radius: 10px;
+    background-color: rgb(42, 66, 117);
+    border-radius: 10px;*/
+    width: 90%;
 }
 
 .contenedorTarjeta .contenido {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    /*margin-top: 40px;*/
+    background-color: rgb(42, 66, 117);
+    border-radius: 10px;
+
     padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(236, 236, 236);
 }
 
 .contenido__disponible {
@@ -45,11 +67,13 @@
 
 .contenido__disponible span {
     margin-top: 8px;
+    font-size: 22px;
 }
 
 .contenido__numeroTarjeta {
     display: flex;
     justify-content: space-between;
+    margin: 20px 0px 25px 0px;
 }
 
 .contenido__numeroTarjeta .digitos img {
@@ -59,6 +83,7 @@
 .contenido__datos {
     display: flex;
     justify-content: space-between;
+    font-size: 17px;
 }
 
 
@@ -77,6 +102,11 @@
     margin-bottom: 20px;
 }
 
+.contenedorMenu .texto {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+}
+
 .contenedorMenu__uno .contenedorMenu__deposito {
     width: 48%;
     border-radius: 25px;
@@ -86,11 +116,12 @@
 .contenedorMenu__uno .contenedorMenu__deposito .contenido {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
 }
 
 .contenedorMenu__uno .contenedorMenu__deposito .contenido .icono img {
-    width: 32px;
+    width: 24px;
 }
 
 .contenedorMenu__uno .contenedorMenu__retiro {
@@ -102,11 +133,12 @@
 .contenedorMenu__uno .contenedorMenu__retiro .contenido {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
 }
 
 .contenedorMenu__uno .contenedorMenu__retiro .contenido .icono img {
-    width: 32px;
+    width: 24px;
 }
 
 .contenedorMenu__dos {
@@ -123,11 +155,12 @@
 .contenedorMenu__dos .contenedorMenu__transferencia .contenido {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
 }
 
 .contenedorMenu__dos .contenedorMenu__transferencia .contenido .icono img {
-    width: 32px;
+    width: 24px;
 }
 
 .contenedorMenu__dos .contenedorMenu__movimientos {
@@ -139,11 +172,12 @@
 .contenedorMenu__dos .contenedorMenu__movimientos .contenido {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px;
 }
 
 .contenedorMenu__dos .contenedorMenu__movimientos .contenido .icono img {
-    width: 32px;
+    width: 24px;
 }
 
 
@@ -153,6 +187,350 @@
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     margin-top: 40px;
     width: 90%;
-    height: 500px; /* por el momento */
+    height: auto; /* por el momento */
     border-radius: 25px;
+}
+
+.deposito__titulo {
+    padding: 30px 30px;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    color: rgb(41, 41, 41);
+}
+
+.deposito__contenedorMonto {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    border-bottom: 1.6px solid rgb(212, 212, 212);
+    margin-bottom: 25px;
+    color: rgb(102, 102, 102);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.deposito__contenedorMonto input {
+    border: 0px;
+}
+
+.deposito__contenedorBoton {
+    padding: 0px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+
+.deposito__contenedorBoton span {
+    background-color: rgb(80, 80, 212);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.retiro__titulo {
+    padding: 30px 30px;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    color: rgb(41, 41, 41);
+}
+
+.retiro__contenedorMonto {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    border-bottom: 1.6px solid rgb(212, 212, 212);
+    margin-bottom: 25px;
+    color: rgb(102, 102, 102);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.retiro__contenedorMonto input {
+    border: 0px;
+}
+
+.retiro__contenedorBoton {
+    padding: 0px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+
+.retiro__contenedorBoton span {
+    background-color: rgb(80, 80, 212);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.transferencia__titulo {
+    padding: 30px 30px;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    color: rgb(41, 41, 41);
+}
+
+.transferencia__contenedorSelect {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    border-bottom: 1.6px solid rgb(212, 212, 212);
+    margin-bottom: 25px;
+    color: rgb(102, 102, 102);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.transferencia__contenedorSelect select {
+    border: 0px;
+}
+
+.transferencia__contenedorMonto {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    border-bottom: 1.6px solid rgb(212, 212, 212);
+    margin-bottom: 25px;
+    color: rgb(102, 102, 102);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.transferencia__contenedorMonto input {
+    border: 0px;
+}
+
+.transferencia__contenedorAsunto {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    border-bottom: 1.6px solid rgb(212, 212, 212);
+    margin-bottom: 45px;
+    color: rgb(102, 102, 102);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.transferencia__contenedorAsunto input {
+    border: 0px;
+}
+
+.transferencia__contenedorBoton {
+    padding: 0px 30px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.transferencia__contenedorBoton span {
+    background-color: rgb(80, 80, 212);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Tabla en móvil */
+.movimientos__contenedor {
+    background-color: #222222;
+    border-radius: 25px;
+    padding: 25px 40px;
+}
+
+.movimientos__contenedor .fila_1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+}
+
+.movimientos__contenedor .fila_1 span:nth-child(1) {
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.movimientos__contenedor .fila_1 span:nth-child(2) {
+    color: #6c757d;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+}
+
+.movimientos__contenedor .fila_2 {
+    display: flex;
+    flex-direction: column;
+    color: #818181;
+}
+
+.movimientos__contenedor .fila_2 .barra {
+    display: none;
+}
+
+.movimientos__contenedor .fila_2 .ingreso, .egreso {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+/*.movimientos__contenedor .fila_2 .ingreso img {
+    margin-right: 20px;
+}
+.movimientos__contenedor .fila_2 .ingreso span {
+    margin-right: 20px;
+}
+.movimientos__contenedor .fila_2 .egreso img {
+    margin-right: 20px;   
+}
+.movimientos__contenedor .fila_2 .egreso span {
+    margin-right: 20px;   
+}*/
+
+.movimientos__contenedor .fila_3 .tabla_escritorio {
+    display: none;
+}
+
+.movimientos__contenedor .fila_3 .tabla_movil {
+    display: flex;
+    justify-content: center;
+}
+
+.movimientos__contenedor .fila_3 .tabla_movil thead {
+    display: none;
+}
+
+.movimientos__contenedor .fila_3 .tabla_movil tbody tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #818181;
+    border-top: 1px solid rgb(224, 224, 224);
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.movimientos__contenedor .fila_3 .tabla_movil tbody tr td {
+    margin: 5px 0px;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 426px) {
+    .contenedorPerfil {
+        width: 383px;
+    }
+
+    .contenedorTarjeta{
+        width: 383px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .contenedorPerfil {
+        width: 383px;
+    }
+
+    .contenedorTarjeta{
+        width: 383px;
+    }
+
+    .contenedorMenu .items {
+        width: 200px;
+    }
+
+    .contenedorMenu__uno, .contenedorMenu__dos {
+        justify-content: space-between;
+    }
+
+    .movimientos__contenedor .fila_2 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .movimientos__contenedor .fila_2 .barra {
+        display: block;
+    }
+
+    .movimientos__contenedor .fila_2 .ingreso, .egreso {
+        width: 150px;
+    }
+
+    .movimientos__contenedor .fila_3 .tabla_movil {
+        display: none;
+    }
+
+    .movimientos__contenedor .fila_3 .tabla_escritorio {
+        display: block;
+        color: #818181;
+    }
+
+    .movimientos__contenedor .fila_3 .tabla_escritorio table {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .contenedorPerfil {
+        width: 45%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .contenedorPerfil .contenido {
+        width: 90%;
+    }
+
+    .contenedorTarjeta {
+        width: 45%;
+        display: flex;
+        justify-content: end;
+        margin-top: 30px;
+        height: 166.2px;
+    }
+
+    .contenedorTarjeta .contenido {
+        width: 80%;
+        
+    }
+
+    .contenedorMenu {
+        flex-direction: row;
+    }
+    
+    .contenedorMenu .items {
+        width: 160px;
+        height: 58px;
+    }
+
+    .contenedorMenu .contenedorMenu__uno {
+        width: 50%;
+        justify-content: space-around;
+    }
+    
+    .contenedorMenu .contenedorMenu__dos{
+        width: 50%;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .contenedorPerfil {
+        width: 28%;
+    }
+
+    .contenedorTarjeta {
+        width: 28%;
+    }
+
+    .contenedorMenu {
+        width: 68%;
+    }
+
+    .contenedorPanel {
+        width: 68%;
+    }
 }
